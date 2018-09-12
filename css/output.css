@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'FUTURAN';
+  src: url("fonts/FUTURAN.eot");
+  src: url("fonts/FUTURAN.eot") format("embedded-opentype"), url("fonts/FUTURAN.woff2") format("woff2"), url("fonts/FUTURAN.woff") format("woff"), url("fonts/FUTURAN.ttf") format("truetype"), url("fonts/FUTURAN.svg#FUTURAN") format("svg"); }
+@font-face {
+  font-family: 'Yellow Regular';
+  src: url("fonts/Yellowtail-Regular.ttf"); }
+* {
+  font-family: "Bowlby One SC", cursive;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px; }
+
+body {
+  padding: 14px;
+  background-color: #E6D0B8; }
+
+.main-header-container {
+  color: #195FAD;
+  text-align: center;
+  padding: 0 6px;
+  position: relative; }
+  .main-header-container h3 {
+    font-size: .8rem;
+    letter-spacing: 1px; }
+  .main-header-container h1 {
+    font-size: 1.8rem; }
+  .main-header-container .horizontal-rule {
+    width: 100%;
+    border: 2px solid #195FAD; }
+  .main-header-container h6 {
+    font-family: FUTURA;
+    font-size: .5rem; }
+  .main-header-container .portland {
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E6D0B8;
+    width: 110px; }
+  .main-header-container div h2, .main-header-container div h6 {
+    display: inline-block; }
+  .main-header-container span {
+    display: block;
+    text-align: left;
+    font-weight: 200; }
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,14 @@
+$header-font: 'Bowlby One SC', cursive;
+@font-face {
+    font-family: 'FUTURAN';
+    src: url('fonts/FUTURAN.eot');
+    src: url('fonts/FUTURAN.eot') format('embedded-opentype'),
+         url('fonts/FUTURAN.woff2') format('woff2'),
+         url('fonts/FUTURAN.woff') format('woff'),
+         url('fonts/FUTURAN.ttf') format('truetype'),
+         url('fonts/FUTURAN.svg#FUTURAN') format('svg');
+}
+@font-face {
+  font-family: 'Yellow Regular';
+  src: url('fonts/Yellowtail-Regular.ttf');
+}

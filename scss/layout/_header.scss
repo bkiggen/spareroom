@@ -1,0 +1,39 @@
+.main-header-container {
+  color: #195FAD;
+  text-align: center;
+  padding: 0 6px;
+  position: relative;
+  h3 {
+    font-size: .8rem;
+    letter-spacing: 1px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .horizontal-rule {
+    width: 100%;
+    border: 2px solid #195FAD;
+  }
+  h6 {
+    font-family: FUTURA;
+    font-size: .5rem;
+  }
+  .portland {
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E6D0B8;
+    width: 110px;
+  }
+  div {
+    h2, h6 {
+      display: inline-block;
+    }
+  }
+  span {
+    display: block;
+    text-align: left;
+    font-weight: 200;
+  }
+}
