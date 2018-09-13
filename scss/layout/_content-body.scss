@@ -2,15 +2,12 @@
   width: 299px;
   margin: 0 auto;
   .live-music-link {
-    position: relative;
-    width: (100% - 10);
-    height: 132px;
-    margin: 0 auto 4px auto;
+    @include content-link-style(132px);
     .fontella-bass-img {
       width: 83px;
       height: 110px;
       position: absolute;
-      bottom: 3px;
+      bottom: 0;
       left: -8px;
     }
     .star-1-img {
@@ -84,10 +81,7 @@
   } // live music link end
 
   .karaoke-link {
-    position: relative;
-    width: (100% - 10);
-    height: 125px;
-    margin: 0 auto 4px auto;
+    @include content-link-style(125px);
     .star-1-img {
       width: 35px;
       position: absolute;
@@ -102,6 +96,7 @@
       left: -2px;
       font-size: 1rem;
       font-weight: 200;
+      font-family: 'Yellow Regular';
     }
     h6 {
       @include transform(scale(1, 1.2));
@@ -143,10 +138,7 @@
   } // karaoke link end
 
   .bingo-link {
-    position: relative;
-    width: (100% - 10);
-    height: 135px;
-    margin: 0 auto 4px auto;
+    @include content-link-style(148px);
     .star-2-img {
       position: absolute;
       bottom: 0;
@@ -164,9 +156,8 @@
     div {
       position: absolute;
       left: 40px;
-      bottom: 2px;
+      bottom: 15px;
       h5{
-        @include sub-header-font;
         font-size: .75rem;
         font-weight: 200;
         letter-spacing: 3px;
@@ -192,5 +183,127 @@
     height: 148px;
     z-index: -2;
     background: #00B0DF;
+  } // bingo link end
+
+  .breakfast-link {
+    @include content-link-style(128px);
+    img {
+      position: absolute;
+      &:nth-child(1) {
+        top: 8px;
+        right: 24px;
+      }
+      &:nth-child(2) {
+        left: 60px;
+        bottom: 10px;
+      }
+    }
+    h5 {
+      @include transform(scale(1.1, 1.1) rotate(-23deg));
+      font-size: 1.1rem;
+      font-weight: 200;
+      font-family: 'Yellow Regular';
+      letter-spacing: 1px;
+      position: absolute;
+      top: 22px;
+    }
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+      position: absolute;
+      bottom: 40px;
+      right: 20px;
+    }
+    h4 {
+      position: absolute;
+      bottom: 17px;
+      right: 3px;
+      font-size: 1.6rem;
+      font-weight: 200;
+      font-family: 'Yellow Regular';
+      text-decoration: underline;
+    }
+  }
+  .breakfast-link::before {
+    content: "";
+    @include absolute-position-100-percent-width;
+    @include transform(SkewX(10deg));
+    height: 128px;
+    left: -3px;
+    z-index: -1;
+    background: #FF4D35;
+  }
+  .breakfast-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 110px;
+    width: (100%-40);
+    @include transform(SkewX(9deg));
+    height: 128px;
+    z-index: -2;
+    background: #FF4D35;
+  } // breakfast link end
+
+  .lunch-link {
+    @include content-link-style(128px);
+    h6 {
+      @include transform(scale(1, 1.5));
+      font-family: FUTURA;
+      font-weight: 200;
+    }
+    div {
+      &:nth-child(2) {
+        h2 {
+          font-size: 2rem;
+          position: absolute;
+          &:nth-child(1) {
+                @include transform(rotate(-21deg));
+                left: 90px;
+                top: 42px;
+          }
+          &:nth-child(2) {
+                @include transform(rotate(-15deg));
+                left: 113px;
+                top: 34px;
+          }
+          &:nth-child(3) {
+                @include transform(rotate(-10deg));
+                left: 142px;
+                top: 27px;
+          }
+          &:nth-child(4) {
+                @include transform(rotate(-5deg));
+                left: 172px;
+                top: 22px;
+          }
+          &:nth-child(5) {
+                @include transform(rotate(-2deg));
+                left: 200px;
+                top: 22px;
+          }
+        }
+      }
+    }
+  }
+  .lunch-link::before {
+    content: "";
+    @include absolute-position-100-percent-width;
+    @include transform(SkewX(-10deg));
+    height: 128px;
+    left: -3px;
+    z-index: -1;
+    background: #FF9F00;
+  }
+  .lunch-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 110px;
+    width: (100%-40);
+    @include transform(SkewX(-9deg));
+    height: 128px;
+    z-index: -2;
+    background: #FF9F00;
   }
 }
