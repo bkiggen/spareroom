@@ -585,6 +585,8 @@ body {
     background: #00B0DF; }
 
 .main-footer-container {
+  width: 299px;
+  margin: 0 auto;
   padding-left: 18px; }
   .main-footer-container h4:nth-child(1) {
     font-size: 1.18rem; }
