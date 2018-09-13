@@ -4,8 +4,8 @@
   .live-music-link {
     position: relative;
     width: (100% - 10);
-    height: 135px;
-    margin: 0 auto;
+    height: 132px;
+    margin: 0 auto 4px auto;
     .fontella-bass-img {
       width: 83px;
       height: 110px;
@@ -81,5 +81,116 @@
     height: 132px;
     z-index: -2;
     background: #FF4D35;
+  } // live music link end
+
+  .karaoke-link {
+    position: relative;
+    width: (100% - 10);
+    height: 125px;
+    margin: 0 auto 4px auto;
+    .star-1-img {
+      width: 35px;
+      position: absolute;
+      top: 2px;
+      right: 15px;
+    }
+    h5 {
+      @include sub-header-font;
+      @include transform(scale(1.1, 1.1) rotate(-20deg));
+      position: absolute;
+      top: 12px;
+      left: -2px;
+      font-size: 1rem;
+      font-weight: 200;
+    }
+    h6 {
+      @include transform(scale(1, 1.2));
+      position: absolute;
+      top: 35px;
+      left: 35px;
+      font-size: 0.48rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    h1 {
+      @include transform(scale(.75, 2));
+      position: absolute;
+      bottom: 10px;
+      left: -12px;
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+    }
+  }
+  .karaoke-link::before {
+    @include absolute-position-100-percent-width;
+    @include transform(SkewX(10deg));
+    content: "";
+    height: 125px;
+    left: -3px;
+    z-index: -1;
+    background: #FF9F00;
+  }
+  .karaoke-link::after {
+    @include transform(SkewX(10deg));
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: (100%-40);
+    height: 125px;
+    z-index: -2;
+    background: #FF9F00;
+  } // karaoke link end
+
+  .bingo-link {
+    position: relative;
+    width: (100% - 10);
+    height: 135px;
+    margin: 0 auto 4px auto;
+    .star-2-img {
+      position: absolute;
+      bottom: 0;
+    }
+    h1 {
+      @include transform(scale(1.05, 1.7));
+      color: $sand-color;
+      font-size: 3.5rem;
+      letter-spacing: 6.5px;
+      position: absolute;
+      top: 14px;
+      left: 24px;
+      font-weight: 200;
+    }
+    div {
+      position: absolute;
+      left: 40px;
+      bottom: 2px;
+      h5{
+        @include sub-header-font;
+        font-size: .75rem;
+        font-weight: 200;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .bingo-link::before {
+    content: "";
+    @include absolute-position-100-percent-width;
+    @include transform(SkewX(-10deg));
+    height: 148px;
+    left: -3px;
+    z-index: -1;
+    background: #00B0DF;
+  }
+  .bingo-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 110px;
+    width: (100%-40);
+    @include transform(SkewX(-9deg));
+    height: 148px;
+    z-index: -2;
+    background: #00B0DF;
   }
 }
