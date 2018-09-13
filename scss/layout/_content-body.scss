@@ -4,61 +4,46 @@
   .live-music-link {
     @include content-link-style(132px);
     .fontella-bass-img {
+      @include absolute-position(22px, -8px);
       width: 83px;
       height: 110px;
-      position: absolute;
-      bottom: 0;
-      left: -8px;
     }
     .star-1-img {
+      @include absolute-position(60px, 63px);
       width: 35px;
-      position: absolute;
-      top: 60px;
-      left: 63px;
     }
     .star-2-img {
+      @include absolute-position(35px, 217px);
       width: 40px;
-      position: absolute;
-      top: 35px;
-      right: 13px;
     }
     .star-3-img {
+      @include absolute-position(95px, 201px);
       width: 40px;
-      position: absolute;
-      bottom: 3px;
-      right: 32px;
     }
     h1 {
       @include absolute-position-100-percent-width;
       @include transform(scale(0.6, 1.9));
-      top: 12px;
-      left: 23px;
+      @include absolute-position(12px, 23px);
       letter-spacing: 3px;
     }
 
     h6 {
       @include transform(scale(1, 1.5));
+      @include absolute-position(66px, 98px);
       font-size: .5rem;
       font-weight: $font-weight-500;
-      position: absolute;
-      top: 66px;
-      left: 98px;
     }
     h2 {
       @include transform(scale(1, 1.3));
+      @include absolute-position(56px, 126px);
       font-weight: $font-weight-500;
-      position: absolute;
-      top: 56px;
-      left: 126px;
     }
     h5 {
       @include transform(scale(1, 1.1) rotate(-8deg));
+      @include absolute-position(89px, 58px);
       font-size: .6rem;
       font-weight: $font-weight-500;
       letter-spacing: 1.8px;
-      position: absolute;
-      top: 89px;
-      left: 58px;
     }
   }
   .live-music-link::before {
@@ -83,35 +68,27 @@
   .karaoke-link {
     @include content-link-style(125px);
     .star-1-img {
+      @include absolute-position(2px, 219px);
       width: 35px;
-      position: absolute;
-      top: 2px;
-      right: 15px;
     }
     h5 {
       @include sub-header-font;
       @include transform(scale(1.1, 1.1) rotate(-20deg));
-      position: absolute;
-      top: 12px;
-      left: -2px;
+      @include absolute-position(12px, -2px);
       font-size: 1rem;
       font-weight: 200;
       font-family: 'Yellow Regular';
     }
     h6 {
       @include transform(scale(1, 1.2));
-      position: absolute;
-      top: 35px;
-      left: 35px;
+      @include absolute-position(35px, 35px);
       font-size: 0.48rem;
       font-weight: 500;
       letter-spacing: 1px;
     }
     h1 {
       @include transform(scale(.75, 2));
-      position: absolute;
-      bottom: 10px;
-      left: -12px;
+      @include absolute-position(54px, -12px);
       font-size: 2.5rem;
       letter-spacing: 5px;
     }
@@ -127,10 +104,8 @@
   }
   .karaoke-link::after {
     @include transform(SkewX(10deg));
+    @include absolute-position(0, 111px);
     content: "";
-    position: absolute;
-    top: 0;
-    right: -1px;
     width: (100%-40);
     height: 125px;
     z-index: -2;
@@ -145,18 +120,14 @@
     }
     h1 {
       @include transform(scale(1.05, 1.7));
+      @include absolute-position(14px, 24px);
       color: $sand-color;
       font-size: 3.5rem;
       letter-spacing: 6.5px;
-      position: absolute;
-      top: 14px;
-      left: 24px;
       font-weight: 200;
     }
     div {
-      position: absolute;
-      left: 40px;
-      bottom: 15px;
+      @include absolute-position(100px, 40px);
       h5{
         font-size: .75rem;
         font-weight: 200;
@@ -174,6 +145,7 @@
     background: #00B0DF;
   }
   .bingo-link::after {
+    @include absolute-position(0, 110px);
     content: "";
     position: absolute;
     top: 0;
@@ -188,14 +160,13 @@
   .breakfast-link {
     @include content-link-style(128px);
     img {
-      position: absolute;
       &:nth-child(1) {
+        @include absolute-position(8px, 216px);
         top: 8px;
         right: 24px;
       }
       &:nth-child(2) {
-        left: 60px;
-        bottom: 10px;
+        @include absolute-position(86px, 60px);
       }
     }
     h5 {
@@ -210,14 +181,10 @@
     h2 {
       font-size: 2rem;
       letter-spacing: 1px;
-      position: absolute;
-      bottom: 40px;
-      right: 20px;
+      @include absolute-position(38px, 36px);
     }
     h4 {
-      position: absolute;
-      bottom: 17px;
-      right: 3px;
+      @include absolute-position(75px, 164px);
       font-size: 1.6rem;
       font-weight: 200;
       font-family: 'Yellow Regular';
@@ -234,10 +201,8 @@
     background: #FF4D35;
   }
   .breakfast-link::after {
+    @include absolute-position(0, 110px);
     content: "";
-    position: absolute;
-    top: 0;
-    left: 110px;
     width: (100%-40);
     @include transform(SkewX(9deg));
     height: 128px;
@@ -247,40 +212,96 @@
 
   .lunch-link {
     @include content-link-style(128px);
+    img {
+      &:nth-child(1) {
+        @include absolute-position(54px, 10px);
+      }
+      &:nth-child(2) {
+        @include absolute-position(0, 240px);
+      }
+      &:nth-child(3) {
+        @include absolute-position(87px, 180px);
+      }
+    }
     h6 {
       @include transform(scale(1, 1.5));
+      @include absolute-position(25px, 23px);
       font-family: FUTURA;
       font-weight: 200;
     }
     div {
-      &:nth-child(2) {
+      &:nth-child(5) {
         h2 {
           font-size: 2rem;
-          position: absolute;
           &:nth-child(1) {
                 @include transform(rotate(-21deg));
-                left: 90px;
-                top: 42px;
+                @include absolute-position(42px, 90px);
           }
           &:nth-child(2) {
                 @include transform(rotate(-15deg));
-                left: 113px;
-                top: 34px;
+                @include absolute-position(34px, 113px);
           }
           &:nth-child(3) {
                 @include transform(rotate(-10deg));
-                left: 142px;
-                top: 27px;
+                @include absolute-position(27px, 142px);
           }
           &:nth-child(4) {
                 @include transform(rotate(-5deg));
-                left: 172px;
-                top: 22px;
+                @include absolute-position(22px, 172px);
           }
           &:nth-child(5) {
-                @include transform(rotate(-2deg));
-                left: 200px;
-                top: 22px;
+            @include absolute-position(21px, 199px);
+          }
+        }
+      }
+      &:nth-child(6) {
+        h2 {
+          font-size: 1.3rem;
+          position: absolute;
+          &:nth-child(1) {
+                @include transform(rotate(-22deg));
+                left: 85px;
+                top: 78px;
+          }
+          &:nth-child(2) {
+                @include transform(rotate(-21deg));
+                left: 102px;
+                top: 71px;
+          }
+          &:nth-child(3) {
+                @include transform(rotate(-17deg));
+                left: 119px;
+                top: 65px;
+          }
+          &:nth-child(4) {
+                @include transform(rotate(-12deg));
+                left: 143px;
+                top: 59px;
+          }
+          &:nth-child(5) {
+                @include transform(rotate(-11deg));
+                left: 161px;
+                top: 56px;
+          }
+          &:nth-child(6) {
+                @include transform(rotate(-6deg));
+                left: 172px;
+                top: 54px;
+          }
+          &:nth-child(7) {
+                @include transform(rotate(-1deg));
+                left: 191px;
+                top: 53px;
+          }
+          &:nth-child(8) {
+                @include transform(rotate(2deg));
+                left: 209px;
+                top: 53px;
+          }
+          &:nth-child(9) {
+                @include transform(rotate(6deg));
+                left: 223px;
+                top: 54px;
           }
         }
       }
@@ -296,14 +317,52 @@
     background: #FF9F00;
   }
   .lunch-link::after {
+    @include absolute-position(0, 110px);
     content: "";
-    position: absolute;
-    top: 0;
-    left: 110px;
     width: (100%-40);
     @include transform(SkewX(-9deg));
     height: 128px;
     z-index: -2;
     background: #FF9F00;
+  } // lunch link end
+
+  .email-link {
+    @include content-link-style(52px);
+    h6 {
+      &:nth-child(1) {
+        @include transform(scale(1, 1.7));
+        @include absolute-position(12px, 4px);
+        letter-spacing: 1px;
+        font-size: .5rem;
+        font-family: FUTURA;
+        font-weight: 200;
+      }
+      &:nth-child(2) {
+        font-size: .75rem;
+        letter-spacing: 1px;
+        color: $sand-color;
+        position: absolute;
+        bottom: 6px;
+        left: 17px;
+      }
+    }
   }
+  .email-link::before {
+    content: "";
+    @include absolute-position-100-percent-width;
+    @include transform(SkewX(10deg));
+    height: 52px;
+    left: -9px;
+    z-index: -1;
+    background: #00B0DF;
+  }
+  .email-link::after {
+    @include absolute-position(0, 104px);
+    content: "";
+    width: (100%-40);
+    @include transform(SkewX(9deg));
+    height: 52px;
+    z-index: -2;
+    background: #00B0DF;
+  } // email link end
 }

@@ -19,3 +19,8 @@
   height: $height;
   margin: 0 auto 4px auto;
 }
+@mixin absolute-position($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}

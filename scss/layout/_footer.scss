@@ -1,0 +1,30 @@
+.main-footer-container {
+  padding-left: 18px;
+  h4 {
+    &:nth-child(1) {
+      font-size: 1.18rem;
+    }
+  }
+  h5 {
+    @include transform(scale(1, 1.1));
+    font-size: .7rem;
+    font-family: FUTURA;
+    font-weight: 200;
+  }
+  h6 {
+    font-family: FUTURA;
+    font-weight: 200;
+  }
+  .fab {
+    font-size: 3rem;
+  }
+  .fa-facebook {
+    color: #00B0DF;
+  }
+  .fa-twitter-square {
+    color: #FF9F00;
+  }
+  .fa-instagram {
+    color: #FF4D35;
+  }
+}
