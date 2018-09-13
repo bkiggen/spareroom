@@ -1,0 +1,13 @@
+@mixin sub-header-font {
+  font-family: FUTURA;
+  font-size: .5rem;
+}
+@mixin absolute-position-100-percent-width {
+  position: absolute;
+  width: 100%;
+}
+@mixin transform($arg) {
+  -webkit-transform: $arg;
+  -ms-transform: $arg;
+  transform: $arg;
+}

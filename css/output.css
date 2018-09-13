@@ -1,50 +1,101 @@
 @font-face {
-  font-family: 'FUTURAN';
+  font-family: "FUTURAN";
   src: url("fonts/FUTURAN.eot");
-  src: url("fonts/FUTURAN.eot") format("embedded-opentype"), url("fonts/FUTURAN.woff2") format("woff2"), url("fonts/FUTURAN.woff") format("woff"), url("fonts/FUTURAN.ttf") format("truetype"), url("fonts/FUTURAN.svg#FUTURAN") format("svg"); }
+  src: url("fonts/FUTURAN.eot") format("embedded-opentype"), url("fonts/FUTURAN.woff2") format("woff2"), url("fonts/FUTURAN.woff") format("woff"), url("fonts/FUTURAN.ttf") format("truetype"), url("fonts/FUTURAN.svg#FUTURAN") format("svg");
+}
 @font-face {
-  font-family: 'Yellow Regular';
-  src: url("fonts/Yellowtail-Regular.ttf"); }
+  font-family: "Yellow Regular";
+  src: url("fonts/Yellowtail-Regular.ttf");
+}
 * {
   font-family: "Bowlby One SC", cursive;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 body {
-  padding: 14px;
-  background-color: #E6D0B8; }
+  font-size: 16px;
+  color: #322823;
+  padding: 12px;
+  background-color: #E6D0B8;
+}
 
 .main-header-container {
   color: #195FAD;
   text-align: center;
   padding: 0 6px;
-  position: relative; }
-  .main-header-container h3 {
-    font-size: .8rem;
-    letter-spacing: 1px; }
-  .main-header-container h1 {
-    font-size: 1.8rem; }
-  .main-header-container .horizontal-rule {
-    width: 100%;
-    border: 2px solid #195FAD; }
-  .main-header-container h6 {
-    font-family: FUTURA;
-    font-size: .5rem; }
-  .main-header-container .portland {
-    position: absolute;
-    top: 58px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #E6D0B8;
-    width: 110px; }
-  .main-header-container div h2, .main-header-container div h6 {
-    display: inline-block; }
-  .main-header-container span {
-    display: block;
-    text-align: left;
-    font-weight: 200; }
+  position: relative;
+  margin-bottom: 36px;
+}
+.main-header-container h3 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.main-header-container h1 {
+  font-size: 1.8rem;
+}
+.main-header-container .horizontal-rule {
+  width: 100%;
+  border: 2px solid #195FAD;
+}
+.main-header-container h6 {
+  font-family: FUTURA;
+  font-size: 0.5rem;
+}
+.main-header-container .portland {
+  position: absolute;
+  top: 58px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #E6D0B8;
+  width: 110px;
+}
+.main-header-container div h2, .main-header-container div h6 {
+  display: inline-block;
+}
+.main-header-container div span {
+  display: block;
+  text-align: left;
+  font-family: FUTURA;
+  font-size: 0.5rem;
+}
+
+.main-content-body-container {
+  width: 292px;
+  margin: 0 auto;
+}
+.main-content-body-container .live-music-link {
+  position: relative;
+  width: 90%;
+  height: 135px;
+  margin: 0 auto;
+}
+.main-content-body-container .live-music-link h1 {
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scale(0.6, 1.9);
+  -ms-transform: scale(0.6, 1.9);
+  transform: scale(0.6, 1.9);
+  top: 12px;
+  left: 23px;
+  letter-spacing: 3px;
+}
+.main-content-body-container .live-music-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: SkewX(-10deg);
+  -ms-transform: SkewX(-10deg);
+  transform: SkewX(-10deg);
+  height: 132px;
+  z-index: -1;
+  background: #FF4D35;
+}
 
 /*# sourceMappingURL=output.css.map */

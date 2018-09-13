@@ -1,0 +1,25 @@
+.main-content-body-container {
+  width: 292px;
+  margin: 0 auto;
+  .live-music-link {
+    position: relative;
+    width: (100% - 10);
+    height: 135px;
+    margin: 0 auto;
+    h1 {
+      @include absolute-position-100-percent-width;
+      @include transform(scale(0.6, 1.9));
+      top: 12px;
+      left: 23px;
+      letter-spacing: 3px;
+    }
+  }
+  .live-music-link::before {
+    content: "";
+    @include absolute-position-100-percent-width;
+    @include transform(SkewX(-10deg));
+    height: 132px;
+    z-index: -1;
+    background: #FF4D35;
+  }
+}
