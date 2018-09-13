@@ -15,11 +15,7 @@
 
 body {
   font-size: 16px;
-}
-
-body {
-  font-size: 16px;
-  color: #322823;
+  color: #40332D;
   padding: 12px;
   background-color: #E6D0B8;
 }
@@ -47,12 +43,12 @@ body {
   font-size: 0.5rem;
 }
 .main-header-container .portland {
+  -webkit-transform: scale(1, 1.1) translateX(-50%);
+  -ms-transform: scale(1, 1.1) translateX(-50%);
+  transform: scale(1, 1.1) translateX(-50%);
   position: absolute;
-  top: 58px;
+  top: 60px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   background-color: #E6D0B8;
   width: 110px;
 }
@@ -60,14 +56,20 @@ body {
   display: inline-block;
 }
 .main-header-container div span {
-  display: block;
-  text-align: left;
   font-family: FUTURA;
   font-size: 0.5rem;
+  -webkit-transform: scale(1, 1.5);
+  -ms-transform: scale(1, 1.5);
+  transform: scale(1, 1.5);
+  display: block;
+  text-align: left;
+}
+.main-header-container div span:nth-child(2) {
+  margin-top: 2px;
 }
 
 .main-content-body-container {
-  width: 292px;
+  width: 299px;
   margin: 0 auto;
 }
 .main-content-body-container .live-music-link {
@@ -75,6 +77,31 @@ body {
   width: 90%;
   height: 135px;
   margin: 0 auto;
+}
+.main-content-body-container .live-music-link .fontella-bass-img {
+  width: 83px;
+  height: 110px;
+  position: absolute;
+  bottom: 3px;
+  left: -8px;
+}
+.main-content-body-container .live-music-link .star-1-img {
+  width: 35px;
+  position: absolute;
+  top: 60px;
+  left: 63px;
+}
+.main-content-body-container .live-music-link .star-2-img {
+  width: 40px;
+  position: absolute;
+  top: 35px;
+  right: 13px;
+}
+.main-content-body-container .live-music-link .star-3-img {
+  width: 40px;
+  position: absolute;
+  bottom: 3px;
+  right: 32px;
 }
 .main-content-body-container .live-music-link h1 {
   position: absolute;
@@ -86,6 +113,36 @@ body {
   left: 23px;
   letter-spacing: 3px;
 }
+.main-content-body-container .live-music-link h6 {
+  -webkit-transform: scale(1, 1.5);
+  -ms-transform: scale(1, 1.5);
+  transform: scale(1, 1.5);
+  font-size: 0.5rem;
+  font-weight: 500;
+  position: absolute;
+  top: 66px;
+  left: 98px;
+}
+.main-content-body-container .live-music-link h2 {
+  -webkit-transform: scale(1, 1.3);
+  -ms-transform: scale(1, 1.3);
+  transform: scale(1, 1.3);
+  font-weight: 500;
+  position: absolute;
+  top: 56px;
+  left: 126px;
+}
+.main-content-body-container .live-music-link h5 {
+  -webkit-transform: scale(1, 1.1) rotate(-8deg);
+  -ms-transform: scale(1, 1.1) rotate(-8deg);
+  transform: scale(1, 1.1) rotate(-8deg);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  position: absolute;
+  top: 89px;
+  left: 58px;
+}
 .main-content-body-container .live-music-link::before {
   content: "";
   position: absolute;
@@ -95,6 +152,18 @@ body {
   transform: SkewX(-10deg);
   height: 132px;
   z-index: -1;
+  background: #FF4D35;
+}
+.main-content-body-container .live-music-link::after {
+  content: "";
+  position: absolute;
+  left: 110px;
+  width: 60%;
+  -webkit-transform: SkewX(-9deg);
+  -ms-transform: SkewX(-9deg);
+  transform: SkewX(-9deg);
+  height: 132px;
+  z-index: -2;
   background: #FF4D35;
 }
 

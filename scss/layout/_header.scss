@@ -1,5 +1,5 @@
 .main-header-container {
-  color: #195FAD;
+  color: $navy-blue-color;
   text-align: center;
   padding: 0 6px;
   position: relative;
@@ -19,10 +19,10 @@
     @include sub-header-font;
   }
   .portland {
+    @include transform(scale(1, 1.1) translateX(-50%));
     position: absolute;
-    top: 58px;
+    top: 60px;
     left: 50%;
-    @include transform(translateX(-50%));
     background-color: #E6D0B8;
     width: 110px;
   }
@@ -31,9 +31,13 @@
       display: inline-block;
     }
     span {
+      @include sub-header-font;
+      @include transform(scale(1, 1.5));
       display: block;
       text-align: left;
-      @include sub-header-font;
+      &:nth-child(2) {
+        margin-top: 2px;
+      }
     }
   }
 }
